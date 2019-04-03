@@ -1,0 +1,30 @@
+/* set a max-width for horizontal fluid layout and make it centered */
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  max-width:  950px ;
+}
+
+.centered {
+  margin: 0 auto;
+}
+
+.green{
+	color: #008000;
+}
+
+.jumbotron-home{
+  margin-right: auto;
+  margin-left: auto;
+  max-width:  450px ;
+}
+
+.list-group-downloads{
+  margin-right: auto;
+  margin-left: auto;
+  max-width:  350px ;
+}
+
+.inputError{
+	background-color: #F8D7DA;
+}
