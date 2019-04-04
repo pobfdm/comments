@@ -78,6 +78,10 @@ function validateUrl($url) {
 	if (!contains($REFER,$url)) return false;
     return filter_var($url, FILTER_VALIDATE_URL);
 }
+
+
+
+
 function registerComment($user,$email,$text,$url) 
 {
 	global $DSN;

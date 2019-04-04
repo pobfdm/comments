@@ -38,10 +38,10 @@
 	  
   <div class="row mb-2">
     <div class="col">
-      <input type="text" id="user" name="user" class="form-control" placeholder="User">
+      <input type="text" id="user" name="user" class="form-control" placeholder="<?php echo $userNamePlaceHolder?>">
     </div>
     <div class="col">
-      <input type="email" id="email" name="email" class="form-control" placeholder="E-mail">
+      <input type="email" id="email" name="email" class="form-control" placeholder="<?php echo $emailPlaceHolder?>">
     </div>
   </div>
 
@@ -49,14 +49,14 @@
 
 <div class="row">
 	<div class="col">	
-		<textarea id="text" name="text" class="form-control" id="exampleFormControlTextarea1" style="height: 200px" placeholder="Your comment"></textarea>
+		<textarea id="text" name="text" class="form-control" id="exampleFormControlTextarea1" style="height: 200px" placeholder="<?php echo $textPlaceHolder?>"></textarea>
 		
 	</div>	
 </div>
 <div class="row  mb-2">
 	<div class="col">
 		<label id="labelAnswer" for="answer" class="col-form-label"><?php  echo getQuestionTextFromCode($code) ?> = ?</label>
-		<input type="text" id="answer" name="answer" class="form-control" placeholder="your answer" style="width: 300px">
+		<input type="text" id="answer" name="answer" class="form-control" placeholder="<?php echo $captchaPlaceHolder?>" style="width: 300px">
     </div>
 </div> 
  

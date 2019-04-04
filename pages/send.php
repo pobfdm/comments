@@ -19,25 +19,24 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) &&
 		
 		if (! validateEmail($_POST['email']))
 		{
-			echo '<div class="alert alert-danger text-center" role="alert">Wrong E-Mail address!</div>';
+			echo '<div class="alert alert-danger text-center" role="alert">'.$wrongEmail.'</div>';
 			echo '<script>$("#email").addClass("inputError")</script>';
 			die();
 		}
 		
 		if (empty($_POST['user']))
 		{
-			echo '<div class="alert alert-danger text-center" role="alert">enter a username</div>';
+			echo '<div class="alert alert-danger text-center" role="alert">'.$wrongUsername.'</div>';
 			echo '<script>$("#user").addClass("inputError")</script>';
 			die();
 		}
 		
 		if (empty($_POST['text']))
 		{
-			echo '<div class="alert alert-danger text-center" role="alert">enter a comment</div>';
+			echo '<div class="alert alert-danger text-center" role="alert">'.$wrongText.'</div>';
 			echo '<script>$("#text").addClass("inputError")</script>';
 			die();
 		}
-		
 		
 		
 		try{
@@ -54,7 +53,7 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) &&
 		
 		
 	}else{
-		echo '<div class="alert alert-danger text-center" role="alert">Wrong result</div>';
+		echo '<div class="alert alert-danger text-center" role="alert">'.$wrongResult.'</div>';
 		echo '<script>$("#answer").addClass("inputError")</script>';
 		die();
 	}
